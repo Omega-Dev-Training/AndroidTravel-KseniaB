@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        tools:layout_editor_absoluteX="-16dp"-->
+<!--        tools:layout_editor_absoluteY="51dp"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/basic"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/country"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:text="italy"-->
+<!--                android:textAllCaps="true"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/city"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:text="rome"-->
+<!--                android:textAllCaps="true"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="48sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/short_description"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:text="is a historical powerhouse"-->
+<!--                android:textAllCaps="true"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="14sp" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="120dp"-->
+<!--            android:layout_marginTop="515dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="180dp"-->
+<!--                android:layout_height="90dp"-->
+<!--                android:layout_marginTop="472dp"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="16dp"-->
+<!--                    android:fontFamily="sans-serif-medium"-->
+<!--                    android:text="local time"-->
+<!--                    android:textAllCaps="true"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="12sp" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="16dp"-->
+<!--                    android:layout_marginTop="3dp"-->
+<!--                    android:text="10:23 am"-->
+<!--                    android:textAllCaps="true"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="36sp" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="16dp"-->
+<!--                    android:layout_marginTop="3dp"-->
+<!--                    android:text="12/09/2019"-->
+<!--                    android:textAllCaps="true"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="14sp" />-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="180dp"-->
+<!--                android:layout_height="90dp"-->
+<!--                android:layout_marginLeft="230dp"-->
+<!--                android:layout_marginTop="472dp"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="130dp"-->
+<!--                    android:text="today"-->
+<!--                    android:textAllCaps="true"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="12sp" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="106dp"-->
+<!--                    android:layout_marginTop="3dp"-->
+<!--                    android:text="-2 c"-->
+<!--                    android:textAllCaps="true"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="36sp" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="36dp"-->
+<!--                    android:layout_marginTop="3dp"-->
+<!--                    android:text="scattered clouds"-->
+<!--                    android:textAllCaps="true"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="14sp" />-->
+
+<!--            </LinearLayout>-->
+<!--            -->
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginTop="0dp">-->
+<!--            -->
+<!--            <Button-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_weight="0.33"-->
+<!--                android:background="#FFFFFF"-->
+<!--                android:backgroundTintMode="add"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Attractions"-->
+<!--                android:textSize="12sp"-->
+<!--                android:visibility="visible"-->
+<!--                app:icon="@drawable/ic_map_pin"-->
+<!--                tools:visibility="visible" />-->
+<!--       -->
+<!--            <Button-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_weight="0.33"-->
+<!--                android:background="#FFFFFF"-->
+<!--                android:backgroundTintMode="add"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Need to know"-->
+<!--                android:textSize="12sp"-->
+<!--                app:icon="@drawable/ic_bag" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_weight="0.33"-->
+<!--                android:background="#FFFFFF"-->
+<!--                android:backgroundTintMode="add"-->
+<!--                android:gravity="center"-->
+<!--                android:text="More"-->
+<!--                android:textSize="12sp"-->
+<!--                app:icon="@drawable/ic_additional_info_icon" />-->
+
+
+<!--        </LinearLayout>-->
+
+
+
+<!--        -->
+<!--    </LinearLayout>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
