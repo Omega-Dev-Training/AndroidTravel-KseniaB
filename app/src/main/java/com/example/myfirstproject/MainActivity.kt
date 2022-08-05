@@ -7,7 +7,7 @@ import android.util.Log
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.home_page)
 //        val info = printAppInfo(Log.d("Report", "App Info: co.android.someappkotlin v1.0(1)"))
 //        println(info)
         Log.d("Report", printAppInfo())

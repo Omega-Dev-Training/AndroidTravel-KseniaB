@@ -4,101 +4,134 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:backgroundTint="@color/white"
-    tools:ignore="MissingConstraints, HardcodedText">
+    android:backgroundTint="@color/white" 
+    tools:ignore="MissingConstraints, HardcodedText, ContentDescription">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/image_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintHeight_percent="0.85"
-        app:layout_constraintEnd_toStartOf="id">
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.85">
 
         <ImageView
             android:id="@+id/image"
             android:layout_width="match_parent"
-            android:layout_height="700dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
             android:background="@drawable/image"
-            android:foregroundGravity="center" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            android:contentDescription="TODO"/>
 
         <LinearLayout
-            android:id="@+id/layout_bottom"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
             android:gravity="bottom"
-            app:layout_constraintTop_toTopOf="parent">
+            android:baselineAligned="false"
+            app:layout_constraintBottom_toBottomOf="parent">
 
-        <!--            app:layout_constraintHeight_percent="0.15625"-->
-
-            <Button
-                android:id="@+id/button_attraction"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.33"
-                android:background="?selectableItemBackground"
-                android:drawableTop="@drawable/ic_map_pin"
-                android:gravity="center"
-                android:textAllCaps="false"
-                android:text="Attractions"
-                android:textColor="@color/black"
-                android:textSize="12sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"/>
-<!--                app:layout_constraintWidth_percent="0.15"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                app:layout_constraintTop_toTopOf="parent"-->
-<!--                app:layout_constraintEnd_toStartOf="@id/image"/>-->
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:orientation="vertical">
 
-            <Button
-                android:id="@+id/button_need_to_now"
+                <TextView
+                    android:id="@+id/local_time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="local time"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/local_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="10:23 am"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="12/09/2019"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.33"
-                android:background="?selectableItemBackground"
-                android:drawableTop="@drawable/ic_bag"
-                android:gravity="center"
-                android:textAllCaps="false"
-                android:text="Need to know"
-                android:textColor="@color/black"
-                android:textSize="12sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"/>
+                android:layout_weight="1"
+                android:orientation="vertical">
 
-            <Button
-                android:id="@+id/more"
-                android:layout_width="wrap_content"
-                android:layout_height="100dp"
-                android:layout_weight="0.33"
-                android:background="?selectableItemBackground"
-                android:drawableTop="@drawable/ic_additional_info"
-                android:gravity="center"
-                android:textAllCaps="false"
-                android:text="More"
-                android:textColor="@color/black"
-                android:textSize="12sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:id="@+id/today_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textEnd"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="today"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
 
+                <TextView
+                    android:id="@+id/weather_today"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textEnd"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="-2 c"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:id="@+id/weather_today_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textEnd"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="scattered clouds"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="700dp"
+            android:layout_height="0dp"
             android:orientation="vertical"
             android:gravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0">
+            app:layout_constraintTop_toTopOf="parent">
 
             <TextView
                 android:id="@+id/country"
@@ -134,108 +167,100 @@
         </LinearLayout>
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="700dp"
-        android:orientation="horizontal"
-        android:gravity="bottom">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:id="@+id/layout_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
             android:gravity="bottom"
-            android:orientation="vertical">
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_layout">
 
-            <TextView
-                android:id="@+id/local_time_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:fontFamily="@font/roboto_medium"
-                android:text="local time"
-                android:textAllCaps="true"
-                android:textColor="@color/white"
-                android:textSize="12sp" />
+<!--            <View-->
+<!--                android:id="@+id/my_view"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                -->
+<!--                />-->
 
-            <TextView
-                android:id="@+id/local_time"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="3dp"
-                android:fontFamily="@font/roboto_regular"
-                android:text="10:23 am"
-                android:textAllCaps="true"
-                android:textColor="@color/white"
-                android:textSize="36sp" />
+        <!--            app:layout_constraintHeight_percent="0.15625"-->
 
-            <TextView
-                android:id="@+id/date"
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_attraction"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginBottom="16dp"
-                android:layout_marginTop="3dp"
-                android:fontFamily="@font/roboto_light"
-                android:text="12/09/2019"
-                android:textAllCaps="true"
-                android:textColor="@color/white"
-                android:textSize="14sp" />
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:background="?selectableItemBackground"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:text="Attractions"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:clickable="true"
+                app:icon="@drawable/ic_map_pin"
+                app:iconTint="@color/black"
+                app:iconGravity="textTop"
+                app:iconPadding="10dp"
+
+                style="?android:attr/buttonBarButtonStyle"
+                android:focusable="true" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_need_to_now"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:background="?selectableItemBackground"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:text="Need to know"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:clickable="true"
+                app:icon="@drawable/ic_bag"
+                app:iconTint="@color/black"
+                app:iconGravity="textTop"
+                app:iconPadding="10dp"
+
+                style="?android:attr/buttonBarButtonStyle"
+                android:focusable="true" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/more"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:background="?selectableItemBackground"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:text="More"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:clickable="true"
+                app:icon="@drawable/ic_additional_info"
+                app:iconTint="@color/black"
+                app:iconGravity="textTop"
+                app:iconPadding="10dp"
+
+                style="?android:attr/buttonBarButtonStyle"
+                android:focusable="true" />
+
 
         </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/today_text"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textAlignment="textEnd"
-                        android:layout_marginEnd="16dp"
-                        android:fontFamily="@font/roboto_medium"
-                        android:text="today"
-                        android:textAllCaps="true"
-                        android:textColor="@color/white"
-                        android:textSize="12sp" />
-
-                    <TextView
-                        android:id="@+id/weather_today"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textAlignment="textEnd"
-                        android:layout_marginEnd="16dp"
-                        android:layout_marginTop="3dp"
-                        android:fontFamily="@font/roboto_regular"
-                        android:text="-2 c"
-                        android:textAllCaps="true"
-                        android:textColor="@color/white"
-                        android:textSize="36sp" />
-
-                    <TextView
-                        android:id="@+id/weather_today_text"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textAlignment="textEnd"
-                        android:layout_marginEnd="16dp"
-                        android:layout_marginBottom="16dp"
-                        android:layout_marginTop="3dp"
-                        android:fontFamily="@font/roboto_light"
-                        android:text="scattered clouds"
-                        android:textAllCaps="true"
-                        android:textColor="@color/white"
-                        android:textSize="14sp" />
-
-                </LinearLayout>
-
-            </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
 <!--    <LinearLayout-->
 <!--        android:layout_width="match_parent"-->
 <!--        android:layout_height="match_parent"-->
