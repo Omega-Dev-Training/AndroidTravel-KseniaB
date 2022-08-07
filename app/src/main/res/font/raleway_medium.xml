@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     app:fontProviderAuthority="com.google.android.gms.fonts"
     app:fontProviderPackage="com.google.android.gms"
-    app:fontProviderQuery="name=Raleway&amp;weight=300"
+    app:fontProviderQuery="name=Raleway&amp;weight=500"
     app:fontProviderCerts="@array/com_google_android_gms_fonts_certs"
     tools:ignore="FontValidation">
 </font-family>

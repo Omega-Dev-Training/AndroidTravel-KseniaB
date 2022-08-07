@@ -6,21 +6,36 @@
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/drawable-v24/app_icon_travel_guide_background.xml" value="0.157" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1605" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/drawable/app_icon_travel_guide_foreground.xml" value="0.157" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/drawable/border_for_button.xml" value="0.2615" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/drawable/button_border.xml" value="0.1725" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/drawable/button_border_end.xml" value="0.2615" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/drawable/button_border_start.xml" value="0.2615" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/drawable/ic_addictional.xml" value="0.196" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/drawable/ic_additional_info.xml" value="0.196" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/drawable/ic_app_icon.xml" value="0.1615" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/drawable/ic_bag.xml" value="0.196" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/drawable/ic_home.xml" value="0.1725" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1605" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/drawable/ic_map_pin.xml" value="0.157" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/drawable/ic_recent.xml" value="0.1615" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/drawable/navigation.xml" value="0.176" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/font/abeezee.xml" value="0.5953125" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/font/abel.xml" value="0.5953125" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/font/advent_pro_semibold.xml" value="0.5953125" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/font/font.xml" value="0.32592592592592595" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/font/quicksand.xml" value="0.5953125" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/font/quicksand_bold.xml" value="0.5953125" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/font/raleway.xml" value="0.5953125" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/font/raleway_dots.xml" value="0.3194444444444444" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/font/raleway_med.xml" value="0.59375" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/font/raleway_medium.xml" value="0.59375" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/font/raleway_regukar.xml" value="0.3206751054852321" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/font/raleway_regular.xml" value="0.33425925925925926" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/font/raleway_semi_bold.xml" value="0.59375" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/font/roboto.xml" value="0.32592592592592595" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/font/roboto_light.xml" value="0.33425925925925926" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/layout/home_page.xml" value="0.33" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/layout/home_page.xml" value="1.0" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/mipmap-anydpi-v26/app_icon_travel_guide.xml" value="0.1605" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/mipmap-anydpi-v26/app_icon_travel_guide_round.xml" value="0.1605" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1605" />
