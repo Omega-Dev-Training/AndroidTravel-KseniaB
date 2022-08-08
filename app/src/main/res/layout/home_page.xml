@@ -13,9 +13,7 @@
         android:layout_height="0dp"
         android:scaleType="centerCrop"
         android:src="@drawable/image"
-        app:layout_constraintHeight_percent="0.85"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="-7dp" />
+        app:layout_constraintHeight_percent="0.85"/>
 
     <TextView
         android:id="@+id/local_time_text"
@@ -106,7 +104,7 @@
         android:layout_marginStart="16dp"
         android:gravity="center"
         android:text="italy"
-        android:fontFamily="@font/raleway_regular"
+        android:fontFamily="@font/raleway"
         android:textAllCaps="true"
         android:textColor="@color/white"
         android:textSize="16sp"
@@ -149,7 +147,7 @@
 
     <Button
         android:id="@+id/button_attraction"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="?selectableItemBackground"
         android:clickable="true"
@@ -166,97 +164,78 @@
         app:iconPadding="6dp"
         app:iconTint="@color/black"
 
-        app:layout_constrainedWidth="true"
-
         app:layout_constraintBottom_toBottomOf="@+id/home_page"
-        app:layout_constraintHeight_percent="0.15"
-        app:layout_constraintHorizontal_chainStyle="spread"
-
         app:layout_constraintStart_toStartOf="@+id/home_page"
         app:layout_constraintTop_toBottomOf="@+id/image"
-        app:layout_constraintWidth_percent="0.333" />
+        app:layout_constraintEnd_toStartOf="@+id/button_need_to_now"/>
 
-    <com.google.android.material.button.MaterialButton
+    <Button
         android:id="@+id/button_need_to_now"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginStart="1dp"
         android:background="?selectableItemBackground"
         android:clickable="true"
         android:focusable="true"
+        android:fontFamily="@font/raleway_semi_bold"
         android:gravity="center"
         android:letterSpacing="0.03"
-
         android:text="Need to know"
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="12sp"
-        android:fontFamily="@font/raleway_semi_bold"
-
         app:icon="@drawable/ic_bag"
         app:iconGravity="textTop"
-        app:iconTint="@color/black"
-        app:iconSize="24dp"
         app:iconPadding="6dp"
-        app:layout_constraintHeight_percent="0.15"
-        app:layout_constrainedWidth="true"
-        app:layout_constraintWidth_percent="0.333"
-
-        app:layout_constraintHorizontal_chainStyle="spread"
-
+        app:iconTint="@color/black"
 
         app:layout_constraintBottom_toBottomOf="@+id/home_page"
         app:layout_constraintEnd_toStartOf="@+id/button_more"
-        app:layout_constraintTop_toBottomOf="@+id/image"
-        app:layout_constraintStart_toEndOf="@+id/button_attraction"/>
+        app:layout_constraintStart_toEndOf="@+id/button_attraction"
+        app:layout_constraintTop_toBottomOf="@+id/image" />
 
-<!--    android:foreground="@drawable/border_for_button"-->
-
-    <com.google.android.material.button.MaterialButton
+    <Button
         android:id="@+id/button_more"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="?selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/raleway_semi_bold"
         android:gravity="center"
-        android:textAllCaps="false"
+        android:letterSpacing="0.03"
         android:text="More"
+        android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="12sp"
-        android:clickable="true"
-        android:fontFamily="@font/raleway_semi_bold"
         app:icon="@drawable/ic_additional_info"
-        app:iconTint="@color/black"
         app:iconGravity="textTop"
         app:iconPadding="6dp"
-        app:layout_constraintHeight_percent="0.15"
-        app:layout_constrainedWidth="true"
-        app:layout_constraintWidth_percent="0.333"
-        android:letterSpacing="0.03"
+        app:iconTint="@color/black"
 
-        app:layout_constraintHorizontal_chainStyle="spread"
-
-        app:layout_constraintTop_toBottomOf="@+id/image"
         app:layout_constraintBottom_toBottomOf="@+id/home_page"
         app:layout_constraintEnd_toEndOf="@+id/home_page"
-
-        android:focusable="true" />
+        app:layout_constraintTop_toBottomOf="@+id/image"
+        app:layout_constraintStart_toEndOf="@+id/button_need_to_now"/>
 
     <View
+        android:id="@+id/first_border"
         android:layout_width="1dp"
         android:layout_height="0dp"
         android:background="#E6E6E6"
+
         app:layout_constraintStart_toEndOf="@+id/button_attraction"
         app:layout_constraintBottom_toBottomOf="@+id/home_page"
-        app:layout_constraintHeight_percent="0.15"/>
+        app:layout_constraintTop_toBottomOf="@+id/image"/>
 
     <View
+        android:id="@+id/second_border"
         android:layout_width="1dp"
         android:layout_height="0dp"
         android:background="#E6E6E6"
+
         app:layout_constraintStart_toEndOf="@+id/button_need_to_now"
         app:layout_constraintBottom_toBottomOf="@+id/home_page"
-        app:layout_constraintHeight_percent="0.15"/>
+        app:layout_constraintTop_toBottomOf="@+id/image"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
