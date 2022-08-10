@@ -1,4 +1,6 @@
 package com.example.myfirstproject.ui.homepage
 
-class HomePresenter {
+import com.omega_r.base.mvp.presenters.OmegaPresenter
+
+class HomePresenter: OmegaPresenter<HomeView>() {
 }
