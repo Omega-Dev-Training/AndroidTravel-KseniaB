@@ -5,5 +5,6 @@ import com.omega_r.base.mvp.presenters.OmegaPresenter
 class HomePresenter: OmegaPresenter<HomeView>() {
     init {
         viewState.selectTime()
+        viewState.selectDate()
     }
 }

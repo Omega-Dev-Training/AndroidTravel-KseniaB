@@ -1,17 +1,246 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<android.support.percent.PercentFrameLayout android:id="@+id/home_page1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:ignore="MissingConstraints">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingConstraints, UselessParent, HardcodedText"
+   >
 
     <ImageView
-        android:id="@+id/image2"
-        android:layout_width="wrap_content"
+        android:id="@+id/image1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:src="@drawable/image"
         android:scaleType="centerCrop"
-        android:src="@drawable/image" />
+        app:layout_heightPercent="85%" />
 
-</RelativeLayout>
+    <Button
+        android:id="@+id/button_categories"
+        android:layout_width="match_parent"
+        android:background="?selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/raleway_semi_bold"
+        android:gravity="center"
+        android:letterSpacing="0.03"
+        android:text="Attractions"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:icon="@drawable/ic_map_pin"
+        app:iconGravity="textTop"
+        app:iconPadding="6dp"
+        app:iconTint="@color/black"
+        android:layout_alignParentBottom="true"
+        app:layout_widthPercent="33.333%"
+        app:layout_heightPercent="15%"
+        app:layout_marginTopPercent="85%"/>
+
+    <Button
+        android:id="@+id/button_need"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?selectableItemBackground"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/raleway_semi_bold"
+        android:gravity="center"
+        android:letterSpacing="0.03"
+        android:text="Need to know"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:icon="@drawable/ic_bag"
+        app:iconGravity="textTop"
+        app:iconPadding="6dp"
+        app:iconTint="@color/black"
+        app:layout_widthPercent="33.333%"
+        app:layout_heightPercent="15%"
+        app:layout_marginTopPercent="85%"
+        app:layout_marginLeftPercent="33.333%"/>
+
+    <Button
+        android:id="@+id/button_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/raleway_semi_bold"
+        android:gravity="center"
+        android:letterSpacing="0.03"
+        android:text="More"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:icon="@drawable/ic_additional_info"
+        app:iconGravity="textTop"
+        app:iconPadding="6dp"
+        app:iconTint="@color/black"
+        app:layout_widthPercent="33.333%"
+        app:layout_heightPercent="15%"
+        app:layout_marginTopPercent="85%"
+        app:layout_marginLeftPercent="66.666%" />
+
+    <View
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E6E6E6"
+        app:layout_widthPercent="0.2%"
+        app:layout_heightPercent="15%"
+        app:layout_marginTopPercent="85%"
+        app:layout_marginLeftPercent="33.334%"/>
+
+    <View
+        android:id="@+id/second"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E6E6E6"
+        app:layout_widthPercent="0.2%"
+        app:layout_heightPercent="15%"
+        app:layout_marginTopPercent="85%"
+        app:layout_marginLeftPercent="66.668%"/>
+
+    <TextView
+        android:id="@+id/country1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="16dp"
+        android:gravity="bottom|center_horizontal"
+        android:text="italy"
+        android:fontFamily="@font/raleway"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_marginBottomPercent="57.5%"/>
+
+    <TextView
+        android:id="@+id/city1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="16dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="rome"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        android:fontFamily="@font/raleway_medium"
+        app:layout_marginBottomPercent="51%"
+        app:layout_marginTopPercent="42.5%"/>
+
+    <TextView
+        android:id="@+id/short_description1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="16dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="top|center_horizontal"
+        android:text="is a historical powerhouse"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:fontFamily="@font/raleway_semi_bold"
+        android:textSize="14sp"
+        app:layout_marginBottomPercent="35%"
+        app:layout_marginTopPercent="49%"/>
+
+    <TextView
+        android:id="@+id/local_time_text1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="local time"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_marginBottomPercent="22.5%"
+        app:layout_marginTopPercent="75%"/>
+
+    <TextView
+        android:id="@+id/local_time1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/roboto_regular"
+        android:text="10:23 am"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:maxLines="1"
+        app:layout_marginBottomPercent="19%"
+        app:layout_marginTopPercent="77.5%"/>
+
+    <TextView
+        android:id="@+id/date1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/roboto_light"
+        android:text="12/09/2019"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:maxLines="1"
+        app:layout_marginBottomPercent="15%"
+        app:layout_marginTopPercent="81%"/>
+
+    <TextView
+        android:id="@+id/today_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="16dp"
+        android:gravity="center_vertical|end"
+        android:fontFamily="@font/roboto_medium"
+        android:text="today"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_marginBottomPercent="22.5%"
+        app:layout_marginTopPercent="75%"/>
+
+    <TextView
+        android:id="@+id/weather_today"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="16dp"
+        android:gravity="center_vertical|end"
+        android:fontFamily="@font/roboto_regular"
+        android:text="-2°c"
+        android:maxLines="1"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        app:layout_marginBottomPercent="19%"
+        app:layout_marginTopPercent="77.5%"/>
+
+    <TextView
+        android:id="@+id/weather_today_text1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical|end"
+        android:fontFamily="@font/roboto_light"
+        android:text="Scattered clouds"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:maxLines="1"
+        app:layout_marginBottomPercent="15%"
+        app:layout_marginTopPercent="81%"/>
+
+
+</android.support.percent.PercentFrameLayout>
 
