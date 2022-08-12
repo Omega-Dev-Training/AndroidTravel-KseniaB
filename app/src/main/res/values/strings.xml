@@ -4,4 +4,9 @@
     <string name="need_to_know">Need to know</string>
     <string name="more">More</string>
     <string name="todo">TODO</string>
+    <string name="image">image</string>
+    <string name="must_see">Must see</string>
+    <string name="cultural">Cultural</string>
+    <string name="architecture">Architecture</string>
+    <string name="southern_rome">Southern Rome</string>
 </resources>

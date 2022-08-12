@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/categories"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingConstraints">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintHeight_percent="0.1"
+        android:background="?selectableItemBackground"
+        android:outlineSpotShadowColor="@color/white"
+        android:orientation="horizontal"
+        tools:targetApi="p">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            app:icon="@drawable/ic_arrow_left"
+            app:iconGravity="start"
+            app:iconTint="#DD000000"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:text="@string/attractions"
+            android:textColor="@color/black"
+            android:fontFamily="@font/raleway_medium"
+            android:letterSpacing="0.01"
+            app:iconPadding="35dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackground"
+            app:icon="@drawable/ic_map"
+            app:iconTint="@color/black"
+            android:clickable="true"
+            android:focusable="true"
+            app:iconGravity="end"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/must_see"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.25"
+        app:cardCornerRadius="6dp"
+        app:layout_constraintStart_toStartOf="@+id/categories"
+        app:layout_constraintEnd_toEndOf="@+id/categories"
+        app:layout_constraintTop_toBottomOf="@+id/status_bar"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginVertical="8dp">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?selectableItemBackground"
+            android:src="@drawable/must_see"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="@+id/categories"
+            app:layout_constraintEnd_toEndOf="@+id/categories"
+            app:layout_constraintTop_toBottomOf="@+id/status_bar"
+            android:contentDescription="@string/image"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/must_see"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:fontFamily="@font/raleway_semi_bold"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cultural"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.25"
+        android:layout_marginStart="8dp"
+        android:layout_marginVertical="8dp"
+        app:cardCornerRadius="6dp"
+        app:layout_constraintStart_toStartOf="@id/categories"
+        app:layout_constraintTop_toBottomOf="@+id/must_see"
+        app:layout_constraintEnd_toStartOf="@+id/architecture">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?selectableItemBackground"
+            android:scaleType="centerCrop"
+            android:src="@drawable/rectangle_2"
+            android:contentDescription="@string/cultural"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cultural"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:fontFamily="@font/raleway_semi_bold"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/architecture"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.25"
+        app:cardCornerRadius="6dp"
+        android:layout_marginVertical="8dp"
+        android:layout_marginHorizontal="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/categories"
+        app:layout_constraintTop_toBottomOf="@+id/must_see"
+        app:layout_constraintStart_toEndOf="@+id/cultural">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?selectableItemBackground"
+            android:scaleType="centerCrop"
+            android:src="@drawable/rectangle_2_1"
+            android:contentDescription="@string/architecture" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/attractions"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/raleway_semi_bold"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/southern_rome"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.25"
+        app:cardCornerRadius="6dp"
+        android:layout_marginVertical="8dp"
+        android:layout_marginHorizontal="8dp"
+        app:layout_constraintStart_toStartOf="@+id/categories"
+        app:layout_constraintTop_toBottomOf="@+id/cultural"
+        app:layout_constraintEnd_toStartOf="@+id/museums">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?selectableItemBackground"
+            android:scaleType="centerCrop"
+            android:src="@drawable/rectangle_2_2"
+            android:contentDescription="@string/architecture" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/southern_rome"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/raleway_semi_bold"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/museums"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.25"
+        app:cardCornerRadius="6dp"
+        android:layout_marginVertical="8dp"
+        android:layout_marginHorizontal="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/categories"
+        app:layout_constraintTop_toBottomOf="@+id/architecture"
+        app:layout_constraintStart_toEndOf="@+id/southern_rome">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?selectableItemBackground"
+            android:scaleType="centerCrop"
+            android:src="@drawable/rectangle_2_1"
+            android:contentDescription="@string/architecture" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/attractions"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/raleway_semi_bold"/>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
