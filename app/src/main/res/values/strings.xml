@@ -9,4 +9,21 @@
     <string name="cultural">Cultural</string>
     <string name="architecture">Architecture</string>
     <string name="southern_rome">Southern Rome</string>
+    <string name="leaf">leaf</string>
+    <string name="sports_girl">sports_girl</string>
+    <string name="athletes_names">Saina Nehwal</string>
+    <string name="indian_badminton_player">Indian badminton player</string>
+    <string name="achievement">achievement</string>
+    <string name="_30">30</string>
+    <string name="games">Games</string>
+    <string name="minutes">Minutes</string>
+    <string name="_2400">2400</string>
+    <string name="_16">16</string>
+    <string name="shots">Shots</string>
+    <string name="_13">13</string>
+    <string name="assists">Assists</string>
+    <string name="badminton_comanda">badminton_comanda</string>
+    <string name="badminton_comanda1">badminton_comanda1</string>
+    <string name="information_athletics">information_athletics</string>
+    <string name="physical_parameters">Physical Parameters</string>
 </resources>

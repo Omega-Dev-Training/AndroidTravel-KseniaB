@@ -162,7 +162,7 @@
             android:background="?selectableItemBackground"
             android:scaleType="centerCrop"
             android:src="@drawable/rectangle_2_2"
-            android:contentDescription="@string/architecture" />
+            android:contentDescription="@string/southern_rome" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -172,6 +172,8 @@
             android:textSize="16sp"
             android:layout_gravity="center"
             android:fontFamily="@font/raleway_semi_bold"/>
+
+    </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/museums"
