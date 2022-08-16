@@ -26,4 +26,16 @@
     <string name="badminton_comanda1">badminton_comanda1</string>
     <string name="information_athletics">information_athletics</string>
     <string name="physical_parameters">Physical Parameters</string>
+    <string name="athletes_params">sportsmens_params</string>
+    <string name="_1_80m">1.80m</string>
+    <string name="height">Height</string>
+    <string name="biography">Biography</string>
+    <string name="_60kg">60kg</string>
+    <string name="weight">Weight</string>
+    <string name="_32_yrs">32 Yrs</string>
+    <string name="female">Female</string>
+    <string name="gender">Gender</string>
+    <string name="description">Saina Nehwal is an Indian professional badminton player. A former world no. 1, she has won 24 international titles, which includes ten Superseries titles. Although she reached the world\'s 2nd in 2009, it was only in 2015 that she was able to attain the world Saina Nehwal is an Indian professional badminton player. A former world no. 1, she has won 24 international titles, which includes ten Superseries titles. Although she reached the world\'s 2nd in 2009, it was only in 2015 that she was able to attain the world Saina Nehwal is an Indian professional badminton player. A former world no. 1, she has won 24 international titles, which includes ten Superseries titles. Although she reached the world\'s 2nd in 2009, it was only in 2015 that she was able to attain the world</string>
+    <string name="_17">17</string>
+    <string name="wins">Wins</string>
 </resources>
