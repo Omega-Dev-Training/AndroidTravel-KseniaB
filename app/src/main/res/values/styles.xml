@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="MyStyle">
-        <item name="android:fontFamily">@font/roboto_regular</item>
+    <style
+        name="AppTheme"
+        parent="Theme.AppCompat.Light">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+<!--        <item name="titleEnabled">true</item>-->
+<!--        <item name="title">@string/athletes_names</item>-->
+<!--        <item name="expandedTitleTextColor">@color/white</item>-->
+<!--        <item name="collapsedTitleTextColor">@color/white</item>-->
+
     </style>
 
 </resources>

@@ -26,8 +26,11 @@
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/drawable/ic_rectangle_8.xml" value="0.165" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/drawable/navigation.xml" value="0.176" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/drawable/rectangle.xml" value="0.198" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/drawable/rectangle_achieve.xml" value="0.198" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/drawable/rectangle_biography.xml" value="0.198" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/drawable/rectangle_discription.xml" value="0.198" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/drawable/rectangle_for_params.xml" value="0.198" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/drawable/toolbar_style.xml" value="0.195" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/font/abeezee.xml" value="0.5953125" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/font/abel.xml" value="0.5953125" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/font/advent_pro_semibold.xml" value="0.5953125" />
@@ -50,6 +53,7 @@
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/layout/home_page_another.xml" value="0.2" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/layout/player_profile.xml" value="0.33" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/layout/sportsmen_profile.xml" value="0.25" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/menu/back_button.xml" value="0.88" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/mipmap-anydpi-v26/app_icon_travel_guide.xml" value="0.1605" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/mipmap-anydpi-v26/app_icon_travel_guide_round.xml" value="0.1605" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1605" />
