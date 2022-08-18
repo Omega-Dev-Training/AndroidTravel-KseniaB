@@ -17,7 +17,7 @@
             android:fitsSystemWindows="true"
             android:backgroundTint="#0000"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            app:layout_collapseMode="parallax">
+            >
 
             <com.google.android.material.appbar.CollapsingToolbarLayout
                 android:id="@+id/main_info_collapsing"
@@ -33,11 +33,11 @@
                 app:expandedTitleTextColor="@color/white"
                 app:collapsedTitleTextColor="@color/white"
                 app:statusBarScrim="@color/dark_purple"
-                app:expandedTitleTextAppearance="@style/AppTheme"
-                app:collapsedTitleTextAppearance="@style/AppTheme"
+                app:expandedTitleTextAppearance="@style/ToolBarExpanded"
+                app:collapsedTitleTextAppearance="@style/ToolBarCollapsed"
+                app:expandedTitleMarginBottom="55dp"
                 app:expandedTitleGravity="left|bottom"
-                app:collapsedTitleGravity="left"
-                app:layout_collapseMode="parallax">
+                app:collapsedTitleGravity="left">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -48,7 +48,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="260dp"
                         android:layout_marginTop="-32dp"
-
                         app:cardBackgroundColor="@color/dark_purple"
                         app:cardCornerRadius="30dp"
                         app:layout_collapseMode="parallax">
@@ -59,8 +58,7 @@
                             android:layout_height="wrap_content"
                             android:src="@drawable/purple_leaf"
                             android:layout_gravity="end|top"
-                            android:contentDescription="@string/leaf"
-                            app:layout_collapseMode="parallax" />
+                            android:contentDescription="@string/leaf" />
 
                         <ImageView
                             android:id="@+id/sports_girl"
@@ -68,8 +66,7 @@
                             android:layout_height="wrap_content"
                             android:src="@drawable/sports_girl"
                             android:layout_gravity="end|bottom"
-                            android:contentDescription="@string/sports_girl"
-                            app:layout_collapseMode="parallax" />
+                            android:contentDescription="@string/sports_girl"/>
 
                         <ImageView
                             android:id="@+id/badminton_comanda1"
@@ -78,9 +75,8 @@
                             android:layout_gravity="start|bottom"
                             android:src="@drawable/badminton_comanda"
                             android:layout_marginStart="38dp"
-                            android:layout_marginBottom="70dp"
-                            android:contentDescription="@string/badminton_comanda"
-                            app:layout_collapseMode="parallax"/>
+                            android:layout_marginBottom="88dp"
+                            android:contentDescription="@string/badminton_comanda" />
 
                         <ImageView
                             android:id="@+id/badminton_comanda2"
@@ -89,10 +85,9 @@
                             android:layout_gravity="start|bottom"
                             android:src="@drawable/badminton_comanda1"
                             android:layout_marginStart="68dp"
-                            android:layout_marginBottom="71dp"
+                            android:layout_marginBottom="90dp"
                             android:contentDescription="@string/badminton_comanda1"
-                            android:nextFocusRight="@+id/badminton_comanda1"
-                            app:layout_collapseMode="parallax"/>
+                            android:nextFocusRight="@+id/badminton_comanda1" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -102,8 +97,7 @@
                             android:textColor="@color/white_40"
                             android:textSize="12sp"
                             android:layout_marginStart="37dp"
-                            android:layout_marginBottom="12dp"
-                            app:layout_collapseMode="parallax"/>
+                            android:layout_marginBottom="27dp" />
 
                     </androidx.cardview.widget.CardView>
 
@@ -114,13 +108,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="?attr/actionBarSize"
                     android:background="#0000"
-                    app:layout_collapseMode="pin"
-                    app:popupTheme="@style/ThemeOverlay.AppCompat.Dark">
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+                    app:navigationIcon="@drawable/arrow_back"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:paddingStart="10dp"
+                    app:layout_collapseMode="pin">
 
-                    <com.google.android.material.appbar.MaterialToolbar
-                        android:layout_width="?attr/actionBarSize"
-                        android:layout_height="?attr/actionBarSize"
-                        app:menu="@menu/back_button" />
 
                 </androidx.appcompat.widget.Toolbar>
 
@@ -136,56 +130,64 @@
         android:fillViewport="true">
 
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="wrap_content">
 
             <HorizontalScrollView
+                android:id="@+id/horizontal_achieve"
                 android:layout_width="match_parent"
-                android:layout_height="75dp"
+                android:layout_height="wrap_content"
                 android:scrollbars="none"
-                android:fillViewport="true">
+                android:fillViewport="true"
+                android:layout_marginTop="12dp"
+                app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/achievements_card_view"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    app:cardCornerRadius="10dp"
-                    android:layout_marginHorizontal="10dp"
-                    android:layout_marginTop="10dp">
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="-16dp"
+                    android:gravity="center">
 
                     <ImageView
                         android:id="@+id/image_rectangle"
                         android:layout_width="0dp"
                         android:layout_height="0dp"
+                        android:layout_marginHorizontal="9dp"
                         android:src="@drawable/rectangle_achieve"
-                        app:layout_constraintEnd_toEndOf="@+id/achievements_card_view"
-                        app:layout_constraintStart_toStartOf="@+id/achievements_card_view"
-                        app:layout_constraintBottom_toBottomOf="@+id/achievements_card_view"
-                        app:layout_constraintTop_toTopOf="@+id/achievements_card_view"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
                         android:contentDescription="@string/achievement"/>
 
                         <TextView
                             android:id="@+id/amount_games"
-                            android:layout_width="0dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:gravity="center_horizontal"
                             android:text="@string/_30"
+                            android:maxLines="1"
                             android:textColor="@color/black"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="30dp"
                             android:textSize="20sp"
-                            android:fontFamily="@font/roboto_bold"
+                            android:textStyle="bold"
                             app:layout_constraintStart_toStartOf="@+id/achievements_card_view"
                             app:layout_constraintEnd_toStartOf="@+id/amount_minutes"
                             android:paddingTop="10dp"/>
 
                         <TextView
                             android:id="@+id/games"
-                            android:layout_width="0dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:gravity="center_horizontal"
                             android:text="@string/games"
-                            android:fontFamily="@font/roboto_regular"
+                            android:maxLines="1"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="30dp"
                             android:textSize="12sp"
                             app:layout_constraintTop_toBottomOf="@+id/amount_games"
                             app:layout_constraintStart_toStartOf="@+id/achievements_card_view"
@@ -193,11 +195,11 @@
 
                         <TextView
                             android:id="@+id/amount_minutes"
-                            android:layout_width="0dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:gravity="center_horizontal"
                             android:text="@string/_2400"
-                            android:fontFamily="@font/roboto_bold"
+                            android:maxLines="1"
+                            android:textStyle="bold"
                             android:textSize="20sp"
                             android:textColor="@color/black"
                             app:layout_constraintStart_toEndOf="@+id/amount_games"
@@ -206,86 +208,95 @@
 
                         <TextView
                             android:id="@+id/minutes"
-                            android:layout_width="0dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:gravity="center_horizontal"
                             android:text="@string/minutes"
-                            android:fontFamily="@font/roboto_regular"
+                            android:maxLines="1"
                             android:textSize="12sp"
+                            android:layout_marginBottom="10dp"
                             app:layout_constraintStart_toEndOf="@+id/games"
                             app:layout_constraintTop_toBottomOf="@+id/amount_minutes"
-                            app:layout_constraintEnd_toStartOf="@+id/shots"/>
+                            app:layout_constraintEnd_toStartOf="@+id/shots"
+                            app:layout_constraintBottom_toBottomOf="@+id/achievements_card_view"/>
 
                         <TextView
                             android:id="@+id/amount_shots"
-                            android:layout_width="0dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:gravity="center_horizontal"
                             android:text="@string/_16"
+                            android:maxLines="1"
                             android:textSize="20sp"
                             android:textColor="@color/black"
-                            android:fontFamily="@font/roboto_bold"
+                            android:textStyle="bold"
+                            android:layout_marginHorizontal="30dp"
+                            android:paddingTop="10dp"
                             app:layout_constraintStart_toEndOf="@+id/amount_minutes"
-                            app:layout_constraintEnd_toStartOf="@id/amount_assists"
-                            android:paddingTop="10dp"/>
+                            app:layout_constraintEnd_toStartOf="@id/amount_assists" />
 
                         <TextView
                             android:id="@+id/shots"
-                            android:layout_width="0dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:gravity="center_horizontal"
                             android:text="@string/shots"
+                            android:maxLines="1"
                             android:textSize="12sp"
-                            android:fontFamily="@font/roboto_regular"
+                            android:layout_marginHorizontal="30dp"
                             app:layout_constraintStart_toEndOf="@id/minutes"
                             app:layout_constraintTop_toBottomOf="@id/amount_shots"
-                            app:layout_constraintEnd_toStartOf="@id/assists"/>
+                            app:layout_constraintEnd_toStartOf="@id/assists"
+                            />
 
                         <TextView
                             android:id="@+id/amount_assists"
-                            android:layout_width="0dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:gravity="center_horizontal"
                             android:text="@string/_13"
+                            android:maxLines="1"
                             android:textSize="20sp"
                             android:textColor="@color/black"
-                            android:fontFamily="@font/roboto_bold"
+                            android:textStyle="bold"
+                            android:paddingTop="10dp"
                             app:layout_constraintStart_toEndOf="@id/amount_shots"
-                            app:layout_constraintEnd_toEndOf="@+id/amount_wins"
-                            android:paddingTop="10dp"/>
+                            app:layout_constraintEnd_toEndOf="@+id/amount_wins" />
 
                         <TextView
                             android:id="@+id/assists"
-                            android:layout_width="0dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:gravity="center_horizontal"
                             android:text="@string/assists"
+                            android:maxLines="1"
                             android:textSize="12sp"
-                            android:fontFamily="@font/roboto_regular"
+                            android:layout_marginBottom="10dp"
                             app:layout_constraintStart_toEndOf="@+id/shots"
                             app:layout_constraintTop_toBottomOf="@id/amount_assists"
-                            app:layout_constraintEnd_toEndOf="@+id/wins"/>
+                            app:layout_constraintEnd_toEndOf="@+id/wins" />
 
                         <TextView
                             android:id="@+id/amount_wins"
-                            android:layout_width="0dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:gravity="center_horizontal"
                             android:text="@string/_17"
+                            android:maxLines="1"
                             android:textSize="20sp"
                             android:textColor="@color/black"
-                            android:fontFamily="@font/roboto_bold"
+                            android:textStyle="bold"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginEnd="12dp"
+                            android:paddingTop="10dp"
                             app:layout_constraintStart_toEndOf="@id/amount_assists"
-                            app:layout_constraintEnd_toEndOf="@+id/achievements_card_view"
-                            android:paddingTop="10dp"/>
+                            app:layout_constraintEnd_toEndOf="@+id/achievements_card_view" />
 
                         <TextView
                             android:id="@+id/wins"
-                            android:layout_width="0dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:gravity="center_horizontal"
                             android:text="@string/wins"
+                            android:maxLines="1"
                             android:textSize="12sp"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginEnd="12dp"
+                            android:layout_marginBottom="10dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/achievements_card_view"
                             app:layout_constraintStart_toEndOf="@id/assists"
                             app:layout_constraintTop_toBottomOf="@+id/amount_wins"
                             app:layout_constraintEnd_toEndOf="@+id/achievements_card_view"/>
@@ -299,7 +310,8 @@
                 android:id="@+id/constraintLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="18dp">
+                android:layout_marginTop="18dp"
+                app:layout_constraintTop_toBottomOf="@+id/horizontal_achieve">
 
                 <ImageView
                     android:id="@+id/information_athletics"
@@ -343,7 +355,6 @@
 
                         <ImageView
                             android:id="@+id/athletes_params"
-                            android:scrollbars="horizontal"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="12dp"
@@ -522,7 +533,7 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-        </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.core.widget.NestedScrollView>
 

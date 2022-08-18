@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.view.WindowManager
+import androidx.appcompat.widget.Toolbar
 import com.example.myfirstproject.BuildConfig
 import com.example.myfirstproject.R
 
@@ -21,6 +22,21 @@ class MainActivity : AppCompatActivity() {
         Log.d("Report", printAppInfo())
 
     }
+
+//    override fun onSupportNavigateUp(): Boolean {
+//        onBackPressed()
+//        return true
+//    }
+
+//    val toolbar: Toolbar = (Toolbar) findViewById(R.id.main_info_toolbar);
+//    setSupportActionBar(toolbar)
+//    toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+//        @Override
+//        public void onClick(View v) {
+//            // back button pressed
+//        }
+//    })
+
     private fun printAppInfo(): String {
         var info =""
         if (BuildConfig.DEBUG){
