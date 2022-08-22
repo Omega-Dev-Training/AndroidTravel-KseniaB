@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style
-        name="ToolBarExpanded"
-        parent="Theme.AppCompat.Light">
+    <style name="ToolBarExpanded">
         <item name="android:fontFamily">@font/roboto_bold</item>
         <item name="android:textSize">24sp</item>
     </style>
 
-    <style
-        name="ToolBarCollapsed"
-        parent="Theme.AppCompat.Light">
+    <style name="ToolBarCollapsed">
     <item name="android:fontFamily">@font/roboto_bold</item>
     <item name="android:textSize">20sp</item>
     </style>
 
+    <style name="categories_toolbar_text_style">
+<!--        <item name="fontFamily">@font/raleway_medium</item>-->
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:text">Attractions</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+
+    <style name="CinnabonTitle">
+        <item name="title">@string/welcome_n_back</item>
+        <item name="titleEnabled">true</item>
+        <item name="titleTextColor">@color/brown</item>
+        <item name="actionBarSize">34sp</item>
+    </style>
 </resources>

@@ -11,4 +11,10 @@
     <color name="dark_purple">#37003C</color>
     <color name="white_40">#66FFFFFF</color>
     <color name="fuchsia">#D424E4</color>
+    <color name="milky_color">#F4EFEE</color>
+    <color name="brown">#854E34</color>
+    <color name="wet_asphalt">#4F4F4F</color>
+    <color name="gray">#828282</color>
+    <color name="bright_blue">#50CAD9</color>
+    <color name="light_brown">#D9C9C5</color>
 </resources>

@@ -3,7 +3,7 @@
     <style name="Theme.MyFirstProject" parent="Theme.MaterialComponents.DayNight.NoActionBar">
 
         <item name="android:windowNoTitle">true</item>
-        <item name="colorPrimaryVariant">#37003C</item>
+        <item name="colorPrimaryVariant">@color/light_brown</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>

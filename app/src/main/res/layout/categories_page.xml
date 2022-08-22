@@ -24,16 +24,16 @@
             android:background="?selectableItemBackground"
             android:clickable="true"
             android:focusable="true"
-            app:icon="@drawable/ic_arrow_left"
-            app:iconGravity="start"
-            app:iconTint="#DD000000"
-            android:textAllCaps="false"
-            android:textSize="20sp"
-            android:text="@string/attractions"
-            android:textColor="@color/black"
             android:fontFamily="@font/raleway_medium"
             android:letterSpacing="0.01"
-            app:iconPadding="35dp"/>
+            android:text="@string/attractions"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:icon="@drawable/ic_arrow_left"
+            app:iconGravity="start"
+            app:iconPadding="35dp"
+            app:iconTint="#DD000000" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_map"
@@ -192,7 +192,7 @@
             android:layout_height="match_parent"
             android:background="?selectableItemBackground"
             android:scaleType="centerCrop"
-            android:src="@drawable/rectangle_2_1"
+            android:src="@drawable/rectangle_2_3"
             android:contentDescription="@string/architecture" />
         <TextView
             android:layout_width="wrap_content"

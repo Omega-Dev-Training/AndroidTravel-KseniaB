@@ -23,7 +23,7 @@
     <string name="_13">13</string>
     <string name="assists">Assists</string>
     <string name="badminton_comanda">badminton_comanda</string>
-    <string name="badminton_comanda1">badminton_comanda1</string>
+    <string name="badminton_comanda1">badminton_comanda!</string>
     <string name="information_athletics">information_athletics</string>
     <string name="physical_parameters">Physical Parameters</string>
     <string name="athletes_params">sportsmens_params</string>
@@ -39,4 +39,20 @@
     <string name="_17">17</string>
     <string name="wins">Wins</string>
     <string name="back">Back</string>
+    <string name="att">Attractions</string>
+    <string name="welcome_back">Welcome back</string>
+    <string name="welcome_n_back">Welcome \n back</string>
+    <string name="rectangle">rectangle</string>
+    <string name="cake">cake</string>
+    <string name="cinnabon_background">cinnabon_background</string>
+    <string name="please_sign_in">Please Sign In</string>
+    <string name="welcome_nback">Welcome\nback</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="or_continue_as_guest">or continue as Guest</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="UnderLine"><u>Forgot Password?</u></string>
+    <string name="UnderLine1"><u>Sign up</u></string>
+    <string name="facebook_icon">facebook_icon</string>
+    <string name="google_icon">google_icon</string>
 </resources>
