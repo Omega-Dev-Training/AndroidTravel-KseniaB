@@ -24,4 +24,24 @@
         <item name="titleTextColor">@color/brown</item>
         <item name="actionBarSize">34sp</item>
     </style>
+
+    <style name="colorStroke"
+        parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="colorOnSurface">@color/light_brown</item>
+        <item name="colorPrimary">@color/light_brown</item>
+        <item name="colorPrimaryVariant">@color/light_brown</item>
+        <item name="colorOnPrimary">@color/light_brown</item>
+        <item name="colorSecondary">@color/light_brown</item>
+        <item name="colorSecondaryVariant">@color/light_brown</item>
+    </style>
+
+    <style name="MyTextInputLayout">
+        <item name="colorOnSurface">@color/light_brown</item>
+        <item name="colorPrimary">@color/light_brown</item>
+        <item name="colorPrimaryVariant">@color/light_brown</item>
+        <item name="colorOnPrimary">@color/light_brown</item>
+
+        <item name="colorSecondary">@color/light_brown</item>
+        <item name="colorSecondaryVariant">@color/light_brown</item>
+    </style>
 </resources>
