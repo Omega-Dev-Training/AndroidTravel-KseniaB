@@ -15,11 +15,13 @@
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/drawable/color_cinnabon.xml" value="0.139" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/drawable/corners_for_image.xml" value="0.183" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/drawable/corners_for_statusbar.xml" value="0.2485" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/drawable/facebook_vector.xml" value="0.1655" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/drawable/ic_addictional.xml" value="0.196" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/drawable/ic_additional_info.xml" value="0.196" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/drawable/ic_app_icon.xml" value="0.1615" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/drawable/ic_bag.xml" value="0.196" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/drawable/ic_home.xml" value="0.1725" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/drawable/ic_img_bg.xml" value="0.1655" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1605" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/drawable/ic_layer_1_2.xml" value="0.175" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/drawable/ic_map.xml" value="0.183" />
@@ -52,13 +54,13 @@
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/font/roboto_light.xml" value="0.33425925925925926" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/layout-v24/categories_page.xml" value="0.22" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/layout/categories_page.xml" value="0.75" />
-        <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/layout/categories_page_1.xml" value="0.75" />
-        <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/layout/cinnabon.xml" value="0.16" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/layout/categories_page.xml" value="0.22" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/layout/categories_page_1.xml" value="0.25" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/layout/cinnabon.xml" value="0.25" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/layout/home_page.xml" value="0.33" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/layout/home_page_another.xml" value="0.2" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/layout/must_see.xml" value="0.8669833729216152" />
-        <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/layout/must_see_big.xml" value="0.8775" />
+        <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/layout/must_see_big.xml" value="0.25" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/layout/player_profile.xml" value="0.2" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/layout/sportsmen_profile.xml" value="0.25" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/menu/back_button.xml" value="0.88" />
@@ -67,6 +69,7 @@
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/mipmap-anydpi-v26/app_icon_travel_guide_round.xml" value="0.1605" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1605" />
         <entry key="..\:/Users/Omega/AndroidStudioProjects/MyFirstProject/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1605" />
+        <entry key="..\:/Users/Omega/AppData/Local/Android/Sdk/platforms/android-32/data/res/drawable/item_background_holo_dark.xml" value="0.1375" />
         <entry key="..\:/Users/Omega/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/preference_category.xml" value="0.88" />
       </map>
     </option>

@@ -55,4 +55,5 @@
     <string name="UnderLine1"><u>Sign up</u></string>
     <string name="facebook_icon">facebook_icon</string>
     <string name="google_icon">google_icon</string>
+    <string name="button_next">button_next</string>
 </resources>

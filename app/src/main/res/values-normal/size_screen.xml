@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <fraction name="percent_normal" tools:ignore="MissingDefaultResource">0.5</fraction>
+    <dimen name="textSize" tools:ignore="MissingDefaultResource">34sp</dimen>
+    <dimen name="marginBottom" tools:ignore="MissingDefaultResource">0dp</dimen>
+    <dimen name="layout_width" tools:ignore="MissingDefaultResource">120dp</dimen>
+
+</resources>
